@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 
-import "./App.css";
+import "./App.css"; // style file
 
 // getting the values of local storage
 const getDatafromLS = () => {
-  const data = localStorage.getItem("faqs");
+  const data = localStorage.getItem("faqs");//getItems from the local storage
   if (data) {
-    return JSON.parse(data);
+    return JSON.parse(data); //data from local storage is stringified
   } else {
-    return [];
+    return []; //if nothing is there return an empty array
   }
 };
 
@@ -35,7 +35,7 @@ export const App = () => {
     setbodycontent("");
   };
 
-  // delete book from LS
+  // delete faq from LS
   const deletefaq = (title) => {
     const filteredfaqs = faqs.filter((element, index) => {
       return element.title !== title;
@@ -84,7 +84,7 @@ export const App = () => {
 
   // saving data to local storage
   useEffect(() => {
-    localStorage.setItem("faqs", JSON.stringify(faqs));
+    localStorage.setItem("faqs", JSON.stringify(faqs)); //setItems from te local storage
   }, [faqs]);
 
   return (
