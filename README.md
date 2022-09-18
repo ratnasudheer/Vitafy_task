@@ -1,7 +1,5 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Available Scripts
 
 In the project directory, you can run:
@@ -14,57 +12,20 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Design of the project
 
-### `npm run build`
+Developed  FAQ window in this task with Accordion, Add and/or remove single FAQ/remove all FAQ, Ascending and Descending functionality.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1)Firstly, boiler React APP is considered and changes are made accornding to the assigned task
+2)I categorised two components a) form container and b) view container
+3)Form container is much about the adding "title" (question) and "bodycontent" (answer) and button is adopted. In this i made an approach of using localstorage with help of setItem and getItem. While I am working on it I came to know little bit knowledge on session and other theoritical things on cookies. There is another approach of using the React hook of 'useLocalstorage' is also available. But I thought of implementing it in normal way of localstorage without using the mentioned hook.
+4)After that, developed view container for the list of FAQ (title & bodycontent) lists to be displayed in this
+5)At first I developed a component which is re-useable such that any new FAQ is added then it should adopt the Accordion structure like component in the view container.
+6)Maintained minimal concetration on design (honestly accepting it)
+7)In the each FAQ small component, delete button that helps in deleting that particular FAQ
+8)RemoveAll is designed to clear the total list FAQS in the view container
+9) As a frontend developer I am aware and need to concentrate on design aspects but I was much interested in solving the task 
+10) Later implemented Ascending and Descending buttons with their functionality (used existing "sort" method in JS), onto the "title"
+11) There is much possiblity of code refinement is possible but I want to be transperent on my first thought of implementation that comes to my mind
+12) Thank you
