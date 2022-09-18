@@ -1,0 +1,42 @@
+/*
+.viewcontainer {
+  display: flex;
+  align-items: right;
+  height: 50vh;
+  width: 50wh;
+  justify-content: center;
+}
+
+.accordion {
+  width: 100px;
+}
+
+.item {
+  background: lightblue;
+  margin-bottom: 2px;
+  padding: 5px 3px;
+}
+
+.title {
+  color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bodycontent {
+  color: black;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+}
+
+.bodycontent.show {
+  height: auto;
+  max-height: 200px;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+
+*/
