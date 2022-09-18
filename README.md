@@ -20,7 +20,7 @@ Developed  FAQ window in this task with Accordion, Add and/or remove single FAQ/
 2)I categorised two components a) form container and b) view container
 3)Form container is much about the adding "title" (question) and "bodycontent" (answer) and button is adopted. In this i made an approach of using localstorage with help of setItem and getItem. While I am working on it I came to know little bit knowledge on session and other theoritical things on cookies. There is another approach of using the React hook of 'useLocalstorage' is also available. But I thought of implementing it in normal way of localstorage without using the mentioned hook. I used the local storage because I do not want to loose my list of FAQ when the page is refreshed (as per task mentioned).
 4)After that, developed view container for the list of FAQ (title & bodycontent) lists to be displayed in this
-5)At first I developed a component which is re-useable such that any new FAQ is added then it should adopt the Accordion structure like component in the view container.
+5)At first I developed a component which is re-useable such that any new FAQ is added then it should adopt the Accordion structure like component (mentioned in the task not to use library) in the view container.
 6)Maintained minimal concetration on design (honestly accepting it)
 7)In the each FAQ small component, delete button that helps in deleting that particular FAQ
 8)RemoveAll is designed to clear the total list FAQS in the view container
