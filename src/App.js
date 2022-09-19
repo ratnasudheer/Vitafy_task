@@ -186,89 +186,13 @@ export const App = () => {
           </div>
           {/* Accordion end */}
 
-          {/*Trying from here Accordion working 
-        <div className="App">
-          {faqs.length > 0 && (
-            <>
-              <div className="accordion">
-                <div className="title">
-                  <h2>{faqs.title}</h2>
-                  <h3 className="bodycontent">{faqs.bodycontent}</h3>
-                  <View faqs={faqs} deletefaq={deletefaq} />
-                </div>
-                <br />
-              </div>
-              <button
-                onClick={() => setfaqs([])}
-                style={{
-                  color: "Black",
-                  background: "red",
-                  width: "100%",
-                  cursor: "pointer",
-                }}
-              >
-                Remove All
-              </button>
-            </>
-          )}
-          {faqs.length < 1 && <div>No faqs are added yet</div>}
-        </div>
-
-        Trying till here Accordion */}
-
-          {/*
-        <div className="view-container">
-          {faqs.length > 0 && (
-            <>
-              <div className="table-responsive">
-
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th>Title</th>
-                      <th>Bodycontent</th>
-                      <th>Delete</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <View faqs={faqs} deletefaq={deletefaq} />
-                  </tbody>
-                </table>
-              </div>
-              <button onClick={() => faqs([])}>Remove All</button>
-            </>
-          )}
-          {faqs.length < 1 && <div>No faqs are added yet</div>}
-        </div>
-          */}
+          
         </div>
       </div>
     </div>
   );
 };
 
-/*function App() {
-  return (
-    <div className="App">
-      <div className="accordion">
-        {/* from here
-       
-       {faq.map((item, index) => (
-          <div className="item">
-            <div className="title">
-              <h3>{item.Q}</h3>
-              <span>+</span>
-            </div>
-            <div className="bodycontent">{item.A}</div>
-          </div>
-        ))}
 
-to here
-      }
-      </div>
-    </div>
-  );
-}
- */
 
 export default App;
